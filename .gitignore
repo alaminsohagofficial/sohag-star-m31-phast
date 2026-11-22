@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments & local Jupyter checkpoints
+.venv/
+venv/
+ENV/
+.ipynb_checkpoints/
+
+# Local query exports & scratch candidate lists (keep curated files in data/)
+*.csv
+!data/verification_ledger_template.csv
+*.fits
+*.fit
+*.ecsv
+*.tmp
+*.log
+
+# OS & editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
