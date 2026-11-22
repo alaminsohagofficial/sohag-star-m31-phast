@@ -1,0 +1,24 @@
+# SOHAG STAR Publication & Archival Roadmap
+
+**Project:** SOHAG STAR Investigation (M31 / HST PHAST)  
+**Repository:** `alaminsohagofficial/sohag-star-m31-phast`  
+**Ecosystem:** Salsabilah Ecosystem (Powered by Gemini)  
+
+## 1. Zenodo (Persistent DOI for Code, Queries & Proposal)
+1. Ensure the GitHub repository is **Public** and contains a `LICENSE` / `LICENSE.md` file.
+2. Log in to **Zenodo** via GitHub, open Zenodo's GitHub integration settings, and toggle `sohag-star-m31-phast` **On**.
+3. Create a tagged **GitHub Release** (for example, `v0.1.0-proposal` once the initial pipeline and proposal are set, or `v1.0.0-candidates` after live query verification).
+4. Verify the minted Zenodo DOI on the published Zenodo record page and reference it in `README.md` and future notes. *(Note: Published Zenodo records are permanent snapshots.)*
+
+## 2. Research Notes of the AAS (RNAAS) — Post-Verification Note
+Once live **PHAST** catalog records (`Bricks B24–B36`) are queried, filtered, and verified:
+- Keep the Note concise (**1,500 words or fewer**, including references, acknowledgments, and facility/code notes) with **at most one figure or table** (and a short abstract, typically up to **150 words**).
+- Host larger candidate tables or notebooks on **Zenodo** and link the DOI cleanly.
+- Maintain strict scientific discipline: report exact PHAST identifiers, J2000 coordinates, multi-band photometry, and quality checks; treat **SOHAG STAR** strictly as an informal personal commemorative label rather than a formal IAU designation or unverified discovery claim.
+
+## 3. Preprint & Indexing Channels (`astro-ph` / NASA ADS)
+- Use **arXiv** (`astro-ph`) for fuller technical write-ups or preprints once live results are ready, ensuring citations and machine-readable tables/DOIs are consistent.
+- Ensure every exported report, script, and document carries the mandatory two-line footer.
+
+Salsabilah Ecosystem
+(Powered by Gemini)
