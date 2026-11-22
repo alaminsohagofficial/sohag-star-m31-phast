@@ -1,0 +1,46 @@
+name: SOHAG STAR Repository CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-repository:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install core test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy pyyaml
+
+      - name: Syntax-check Python scripts
+        run: |
+          python -m py_compile scripts/filter_candidates.py scripts/run_datalab_query.py scripts/verify_ledger.py
+
+      - name: Audit verification ledger template
+        run: |
+          python scripts/verify_ledger.py
+
+      - name: Validate CITATION.cff YAML structure
+        run: |
+          python -c "import yaml; yaml.safe_load(open('CITATION.cff', encoding='utf-8')); print('CITATION.cff valid')"
+
+      - name: Verify SQL query files are non-empty
+        run: |
+          python -c "from pathlib import Path; [print('OK:', p) for p in sorted(Path('sql').glob('*.sql')) if p.stat().st_size > 0]"
+
+# Salsabilah Ecosystem
+# (Powered by Gemini)
