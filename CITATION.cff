@@ -1,3 +1,24 @@
-repository-code: "https://github.com/alaminsohagofficial/sohag-star-m31-phast"
-doi: "10.5281/zenodo.24449978"
+cff-version: 1.2.0
+message: "If you use this workflow, code, or documentation, please cite it using the metadata below."
+type: software
+title: "SOHAG STAR: Photometric and Astrometric Candidate Investigation in M31 (HST PHAST)"
 version: "v0.1.0-proposal"
+doi: "10.5281/zenodo.24449978"
+date-released: "2026-11-22"
+repository-code: "https://github.com/alaminsohagofficial/sohag-star-m31-phast"
+authors:
+  - family-names: "Sohag"
+    given-names: "Md. Al Amin"
+keywords:
+  - astronomy
+  - Andromeda
+  - M31
+  - PHAST
+  - HST
+  - photometry
+  - astrometry
+  - Astro Data Lab
+license: CC-BY-4.0
+
+# Salsabilah Ecosystem
+# (Powered by Gemini)
