@@ -1,0 +1,3 @@
+candidate_rank,regime,source_id,brick,ra_deg,dec_deg,mag_f275w,mag_f336w,mag_f475w,mag_f814w,color_f475w_f814w,snr_check,quality_flags_check,cutout_check,literature_check,verification_status,commemorative_label,notes
+1,uv_bright,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,pending,pending,pending,pending,pending_live_query,SOHAG STAR (informal; post-verification only),Replace with verified PHAST catalog values after running Astro Data Lab query
+2,luminous_red,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,pending,pending,pending,pending,pending_live_query,SOHAG STAR (informal; post-verification only),Replace with verified PHAST catalog values after running Astro Data Lab query
