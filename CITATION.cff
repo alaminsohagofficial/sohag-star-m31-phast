@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "SOHAG STAR: Photometric and Astrometric Candidate Investigation in M31 (HST PHAST)"
+message: "If you use this repository, workflow, or documentation, please cite it using these metadata."
+type: software
+authors:
+  - family-names: "Sohag"
+    given-names: "Md. Al Amin"
+repository-code: "https://github.com/alaminsohagofficial/sohag-star-m31-phast"
+abstract: "Reproducible SQL/ADQL and Python candidate discovery workflow and verification framework for investigating distinctive stellar sources in the Andromeda Galaxy (M31) southern disk (Bricks B24-B36) using Hubble Space Telescope PHAST photometry."
+keywords:
+  - astronomy
+  - Andromeda
+  - M31
+  - PHAST
+  - HST
+  - photometry
+  - astrometry
+  - Astro Data Lab
+license: CC-BY-4.0
