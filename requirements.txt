@@ -1,0 +1,6 @@
+pandas>=2.0.0
+numpy>=1.24.0
+astro-datalab>=2.20.0
+
+# Salsabilah Ecosystem
+# (Powered by Gemini)
