@@ -2,6 +2,7 @@
 """
 SOHAG STAR Investigation (M31 / HST PHAST)
 File: scripts/filter_candidates.py
+Release: v0.1.0-proposal | Zenodo DOI: 10.5281/zenodo.24449978
 Purpose: Filter queried PHAST candidates across M31 Bricks B24-B36 and write
          a structured shortlist CSV for astrometric/photometric verification.
 
@@ -84,6 +85,11 @@ def filter_candidates(
     if "mag_f475w" in out.columns:
         out["mag_f475w"] = pd.to_numeric(out["mag_f475w"], errors="coerce")
         out["uv_optical_color_f275_f475"] = out["mag_f275w"] - out["mag_f475w"]
+
+    if "mag_f814w" in out.columns:
+        out["mag_f814w"] = pd.to_numeric(out["mag_f814w"], errors="coerce")
+        if "mag_f475w" in out.columns:
+            out["color_f475w_f814w"] = out["mag_f475w"] - out["mag_f814w"]
 
     out = out.sort_values(by=["mag_f275w", "mag_f336w"], ascending=[True, True]).head(top_n)
     return out.reset_index(drop=True)
