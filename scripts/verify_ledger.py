@@ -2,6 +2,7 @@
 """
 SOHAG STAR Investigation (M31 / HST PHAST)
 File: scripts/verify_ledger.py
+Release: v0.1.0-proposal | Zenodo DOI: 10.5281/zenodo.24449978
 Purpose: Audit candidate verification ledger CSVs for required fields,
          valid J2000 coordinates, PHAST brick membership, and status values.
 
@@ -60,7 +61,7 @@ def audit_ledger(df: pd.DataFrame) -> list[str]:
         return errors
 
     for idx, row in df.iterrows():
-        row_num = idx + 2  # Account for 1-based header line
+        row_num = idx + 2
         cid = str(row["candidate_id"]).strip()
         sid = str(row["source_id"]).strip()
         brick = str(row["brick"]).strip()
